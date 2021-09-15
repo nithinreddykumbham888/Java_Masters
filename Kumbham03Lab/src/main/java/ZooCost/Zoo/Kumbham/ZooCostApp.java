@@ -38,7 +38,9 @@ public class ZooCostApp {
             }
           }
         else{
+                System.out.println("\n"+"*******************************"+"\n");
                 System.out.println(""+calc.toString());
+                System.out.println("\n"+"*******************************"+"\n");
                 System.out.println(""+calc.printReceipt());
         }
         
