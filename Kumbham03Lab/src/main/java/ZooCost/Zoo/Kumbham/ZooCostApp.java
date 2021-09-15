@@ -22,17 +22,17 @@ public class ZooCostApp {
         System.out.println("Do you have coupon (true or false):");
         boolean coupon = scan.nextBoolean();
         ZooCostCalculator calc = new ZooCostCalculator(Adventure,Visitors,member,fvisitor,coupon);
-        if(Adventure<1 || Adventure>3 || Visitors==0 || member==true && fvisitor==true){
+        if(Adventure<1 || Adventure>3 || Visitors<=0 || member==true && fvisitor==true){
             if(Adventure<1 || Adventure>3){
                 System.out.println("Adventure number must be 1 or 2 or 3.");
             }
-            if(Visitors==0){
+            if(Visitors<=0){
                 System.out.println("Passenger number can't be zero.");
             }
             if(member==true && fvisitor==true){
                 System.out.println("User cannot be member and first time visitor.");
             }
-            if(Adventure<1 || Adventure>3 || Visitors==0 || member==true && fvisitor==true)
+            if(Adventure<1 || Adventure>3 || Visitors<=0 || member==true && fvisitor==true)
             {
                 System.out.println("Please try again.");
             }
