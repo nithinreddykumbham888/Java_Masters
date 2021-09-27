@@ -44,7 +44,7 @@ public class ZooCostCalculator {
      * @param visitorCount1
      * @return 
      */
-    private double calcBasePrice_dollars(int adventureNumber1,int visitorCount1){
+    public double calcBasePrice_dollars(int adventureNumber1,int visitorCount1){
         if(adventureNumber1==1){
             if(visitorCount1==1){
                 return 40;
@@ -85,7 +85,7 @@ public class ZooCostCalculator {
      * @param visitorCount1
      * @return 
      */
-    private double calcMemberDiscount_dollars(boolean isMember1,int visitorCount1, int adventureNumber1){
+    public double calcMemberDiscount_dollars(boolean isMember1,int visitorCount1, int adventureNumber1){
         if(isMember1==true){
         if(visitorCount1==1){
             return Math.round(((4.0/100)*calcBasePrice_dollars(adventureNumber1,visitorCount1))*100.0)/100.0;
@@ -104,7 +104,7 @@ public class ZooCostCalculator {
      * @param visitorCount1
      * @return 
      */
-    private double calcFirstTimeDiscount_dollars(boolean isFirstTime1,int visitorCount1,int adventureNumber1){
+    public double calcFirstTimeDiscount_dollars(boolean isFirstTime1,int visitorCount1,int adventureNumber1){
         if(isFirstTime1==true){
         if(visitorCount1==1){
           return Math.round((15.0/100)*(calcBasePrice_dollars(adventureNumber1,visitorCount1))*100.0)/100.0;
@@ -123,7 +123,7 @@ public class ZooCostCalculator {
      * @param hasCoupon1
      * @return 
      */
-    private double calcCouponDiscount_dollars(boolean hasCoupon1){
+    public double calcCouponDiscount_dollars(boolean hasCoupon1){
         if(hasCoupon1==true){
             return 3.0;
         }
@@ -133,7 +133,7 @@ public class ZooCostCalculator {
      * Calculates total price before tax
      * @return 
      */
-    private double totalPriceBeforeTax_dollars(int adventureNumber1,int visitorCount1,boolean isMember1, boolean hasCoupon1,boolean isFirstTime1){
+    public double totalPriceBeforeTax_dollars(int adventureNumber1,int visitorCount1,boolean isMember1, boolean hasCoupon1,boolean isFirstTime1){
          double bPrice = calcBasePrice_dollars(adventureNumber1,visitorCount1);
          double mDiscount = calcMemberDiscount_dollars(isMember1,visitorCount1,adventureNumber1);
          double fDiscount = calcFirstTimeDiscount_dollars(isFirstTime1,visitorCount1,adventureNumber1);
@@ -144,7 +144,7 @@ public class ZooCostCalculator {
      * Calculates total price after tax
      * @return 
      */
-    private double totalPriceAfterTax_dollars(double salesTax_percent1,int adventureNumber1,int visitorCount1,boolean isMember1,boolean hasCoupon1,boolean isFirstTime1){
+    public double totalPriceAfterTax_dollars(double salesTax_percent1,int adventureNumber1,int visitorCount1,boolean isMember1,boolean hasCoupon1,boolean isFirstTime1){
         double A1 = (salesTax_percent)/100;
         double A2 = A1 * totalPriceBeforeTax_dollars(adventureNumber1,visitorCount1,isMember1,hasCoupon1,isFirstTime1);
         return Math.round((totalPriceBeforeTax_dollars(adventureNumber1,visitorCount1,isMember1,hasCoupon1,isFirstTime1) + A2)*100.0)/100.0;
