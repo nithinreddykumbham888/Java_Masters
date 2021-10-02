@@ -43,7 +43,7 @@ public class ZooApp {
                     for (int i = 0; i < 3; i++) {
                         System.out.println("Enter Squireel name");
                         String name = scan.next();
-                        Squireel pinto = new Squireel(name);
+                        Squirrel pinto = new Squirrel(name);
                         pinto.typeofAnimal(name);
                         pinto.age();
                         pinto.height();

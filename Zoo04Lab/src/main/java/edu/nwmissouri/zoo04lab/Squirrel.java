@@ -3,12 +3,12 @@ package edu.nwmissouri.zoo04lab;
  *
  * @author Nithin Reddy Kumbham
  */
-public class Squireel extends Animal{
+public class Squirrel extends Animal{
     /**
      * Aardvark constructor
      * @param name1 
      */
-    public Squireel(String name1){
+    public Squirrel(String name1){
         super(name1);
     }
     
