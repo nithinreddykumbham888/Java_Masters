@@ -41,8 +41,13 @@ public class Squirrel extends Animal{
     }
     
     @Override
-    public void sound(){
+    public void speak(){
         System.out.println("I make a keech keech Sound");
+    }
+    
+    @Override
+    public void move(){
+        System.out.println("I move with four legs");
     }
     
     @Override

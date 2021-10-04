@@ -44,8 +44,13 @@ public class Aardvark extends Animal{
     }
     
     @Override
-    public void sound(){
+    public void speak(){
         System.out.println("I make a Grr Grr Sound");
+    }
+    
+    @Override
+    public void move(){
+        System.out.println("I move with four legs");
     }
     
     @Override

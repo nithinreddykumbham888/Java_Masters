@@ -55,8 +55,15 @@ public abstract class Animal {
     /**
      * Method which Defines the sound of animal
      */
-    public void sound(){
+    public void speak(){
         System.out.println("Defines the sound of animal");
+    }
+    
+     /**
+     * Method which Defines how does the animal move
+     */
+    public void move(){
+        System.out.println("Defines how does the animal move");
     }
     
     /**

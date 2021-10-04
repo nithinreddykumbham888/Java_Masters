@@ -15,10 +15,10 @@ public class ZooApp {
             System.out.println("Welcome to Nithin Reddy 542 Zoo!");
         }
         Scanner scan = new Scanner(System.in);
-        System.out.println("Would you like to see an animal");
+        System.out.println("Would you like to see an animal (True/False) ?");
         boolean choice = scan.nextBoolean();
         while (choice == true) {
-            System.out.println("What type of animal would you like to see:");
+            System.out.println("What type of animal would you like to see :");
             String userChoice = scan.next();
             switch (userChoice) {
                 case "1":
@@ -31,7 +31,8 @@ public class ZooApp {
                         pinto.height();
                         pinto.weight();
                         pinto.isDisabled();
-                        pinto.sound();
+                        pinto.speak();
+                        pinto.move();
                         pinto.sleep();
                         pinto.gender();
                         System.out.println("");
@@ -49,7 +50,8 @@ public class ZooApp {
                         pinto.height();
                         pinto.weight();
                         pinto.isDisabled();
-                        pinto.sound();
+                        pinto.speak();
+                        pinto.move();
                         pinto.sleep();
                         pinto.gender();
                         System.out.println("");
