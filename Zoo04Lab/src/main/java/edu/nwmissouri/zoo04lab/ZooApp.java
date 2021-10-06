@@ -58,6 +58,12 @@ public class ZooApp {
                     }
                     choice = false;
                     break;
+                     case "3": {
+                       SquirrelGroup.create();
+                       SquirrelGroup.run();
+                   }
+                     choice = false;
+                     break;
                 case "Q":
                     choice = false;
                     break;
