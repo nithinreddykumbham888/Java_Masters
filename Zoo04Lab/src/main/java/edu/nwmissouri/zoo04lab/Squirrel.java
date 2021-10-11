@@ -35,6 +35,17 @@ public class Squirrel extends Animal{
         System.out.println("My weight is 16 lbs");
     }
     
+    /**
+     * A method which returns height and weight of an animal combined in double
+     * @param height of animal
+     * @param weight of animal
+     * @return height and weight of animal
+     */
+    
+    public double heightweight(double height, double weight){
+        return height + weight;
+    }
+    
     @Override
     public void isDisabled(){
         System.out.println("Are u kidding !, I am perfectly alright");
@@ -59,4 +70,14 @@ public class Squirrel extends Animal{
     public void gender(){
         System.out.println("I am female");
     }
+    
+    public static void main(String args[]){
+        Squirrel pinto = new Squirrel("pinto");
+        double height = 5.4;
+        double weight = 15.9;
+        double result = pinto.heightweight(height,weight);
+        //pinto.typeofAnimal("pinto");
+        System.out.println("Height and weight of me is : "+result);
+    }
+    
 }
