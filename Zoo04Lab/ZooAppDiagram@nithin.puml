@@ -1,0 +1,16 @@
+@startuml
+abstract class edu.nwmissouri.zoo04lab.Animal
+annotation java.lang.Override
+class edu.nwmissouri.zoo04lab.Aardvark
+class edu.nwmissouri.zoo04lab.Squirrel
+class edu.nwmissouri.zoo04lab.SquirrelGroup
+class edu.nwmissouri.zoo04lab.ZooApp
+class java.util.ArrayList
+class java.util.Scanner
+edu.nwmissouri.zoo04lab.Aardvark --|> edu.nwmissouri.zoo04lab.Animal
+edu.nwmissouri.zoo04lab.Aardvark ..> java.lang.Override
+edu.nwmissouri.zoo04lab.Squirrel --|> edu.nwmissouri.zoo04lab.Animal
+edu.nwmissouri.zoo04lab.Squirrel ..> java.lang.Override
+edu.nwmissouri.zoo04lab.SquirrelGroup ..> java.util.ArrayList
+edu.nwmissouri.zoo04lab.ZooApp ..> java.util.Scanner
+@enduml

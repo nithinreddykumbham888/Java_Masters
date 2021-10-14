@@ -1,12 +1,23 @@
 package edu.nwmissouri.zoo04lab;
+
+enum DaysofWeek{
+    SUNDAY,
+    MONDAY,
+    TUESDAY,
+    WEDNESDAY,
+    THRUSDAY,
+    FRIDAY,
+    SATURDAY
+}
 /**
- *
+ * Squireel class (derived from subclass of superclass Animal)    
  * @author Nithin Reddy Kumbham
  */
+
 public class Squirrel extends Animal{
     /**
      * Aardvark constructor
-     * @param name1 
+     * @param String name1 
      */
     public Squirrel(String name1){
         super(name1);
@@ -71,13 +82,37 @@ public class Squirrel extends Animal{
         System.out.println("I am female");
     }
     
+    /**
+     * Method void which multiplies a & b
+     */
+    public void functionMultiply(){
+        int a = 10;
+        int b = 15;
+        System.out.println("Result of a*b is : "+a*b);
+    }
+    
     public static void main(String args[]){
         Squirrel pinto = new Squirrel("pinto");
         double height = 5.4;
         double weight = 15.9;
         double result = pinto.heightweight(height,weight);
-        //pinto.typeofAnimal("pinto");
-        System.out.println("Height and weight of me is : "+result);
+        pinto.typeofAnimal("pinto");
+        pinto.age();
+        pinto.move();
+        pinto.speak();
+        pinto.isDisabled();
+        pinto.functionMultiply();
+        System.out.println("Height and weight of me combined is : "+result);
+        
+        //enum
+        DaysofWeek monday = DaysofWeek.MONDAY;
+        DaysofWeek sunday = DaysofWeek.SUNDAY;
+        if(DaysofWeek.MONDAY == monday){
+            System.out.println("Today is Monday, Gotta rush to work");
+        }
+        if(DaysofWeek.SUNDAY == sunday){
+            System.out.println("Today is Sunday, The weekend is gonna complete");
+        }
     }
     
 }
