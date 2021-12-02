@@ -20,64 +20,46 @@ public abstract class Animal {
     /**
      * Method which Defines the type of animal
      */
-    public void typeofAnimal(){
-        System.out.println("Defines the type of animal");
-    }
+    public abstract void typeofAnimal();
     
      /**
      * Method which Defines age of animal
      */
-    public void age(){
-        System.out.println("Defines age of animal");
-    }
+    public abstract void age();
     
     /**
      * Method which Defines height of animal
      */
-    public void height(){
-        System.out.println("Defines height of animal");
-    }
+    public abstract void height();
     
     /**
      * Method which Defines weight of animal
      */
-    public void weight(){
-        System.out.println("Defines weight of animal");
-    }
+    public abstract void weight();
     
     /**
      * Method which Defines whether the animal is disabled or not
      */
-    public void isDisabled(){
-        System.out.println("Defines whether the animal is disabled or not");
-    }
+    public abstract void isDisabled();
     
     /**
      * Method which Defines the sound of animal
      */
-    public void speak(){
-        System.out.println("Defines the sound of animal");
-    }
+    public abstract void speak();
     
      /**
      * Method which Defines how does the animal move
      */
-    public void move(){
-        System.out.println("Defines how does the animal move");
-    }
+    public abstract void move();
     
     /**
      * Method which Defines how many hours does the animal sleep
      */
-    public void sleep(){
-        System.out.println("Defines how many hours does the animal sleep");
-    }
+    public abstract void sleep();
     
     /**
      * Method which Defines gender of animal
      */
-    public void gender(){
-        System.out.println("Defines the gender of animal");
-    }
+    public abstract void gender();
     
 }

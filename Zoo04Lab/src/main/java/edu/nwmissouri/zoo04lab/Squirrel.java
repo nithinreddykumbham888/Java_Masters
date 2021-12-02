@@ -10,13 +10,13 @@ enum DaysofWeek{
     SATURDAY
 }
 /**
- * Squireel class (derived from subclass of superclass Animal)    
+ * Squirrel class (derived from subclass of superclass Animal)    
  * @author Nithin Reddy Kumbham
  */
 
 public class Squirrel extends Animal{
     /**
-     * Aardvark constructor
+     * Squirrel constructor
      * @param String name1 
      */
     public Squirrel(String name1){
@@ -113,6 +113,11 @@ public class Squirrel extends Animal{
         if(DaysofWeek.SUNDAY == sunday){
             System.out.println("Today is Sunday, The weekend is gonna complete");
         }
+    }
+
+    @Override
+    public void typeofAnimal() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }

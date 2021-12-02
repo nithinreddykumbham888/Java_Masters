@@ -5,7 +5,7 @@ package edu.nwmissouri.zoo04lab;
  *
  * @author Nithin Reddy Kumbham
  */
-public class Aardvark extends Animal{
+public class Aardvark extends Animal implements Runnable{
     
     /**
      * Aardvark constructor
@@ -61,6 +61,25 @@ public class Aardvark extends Animal{
     @Override
     public void gender(){
         System.out.println("I am male");
+    }
+    
+    @Override
+    public void run(){
+        this.age();
+        this.age();
+        this.height();
+        this.weight();
+        this.isDisabled();
+        this.speak();
+        this.move();
+        this.move();
+        this.sleep();
+        this.gender();
+    }
+
+    @Override
+    public void typeofAnimal() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }
