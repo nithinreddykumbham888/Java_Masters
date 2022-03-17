@@ -53,8 +53,8 @@ public class EmployeeSalary {
     
     
     //Setter's
-      public void sethourlyRate(double hourlyRate1){
-    hourlyRate = hourlyRate1;
+      public void sethourlyRate(double hourlyRate){
+    this.hourlyRate = hourlyRate;
   }
       public void setinsuranceRate(double insuranceRate1){
     insuranceRate = insuranceRate1;
